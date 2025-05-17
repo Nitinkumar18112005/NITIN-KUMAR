@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+        <form id="attendanceForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+
+            <button type="button" onclick="submitAttendance()">Submit Attendance</button>
+        </form>
+        <button onclick="viewRecords()">View Attendance Records</button>
+        <div id="records">
+            <!-- Attendance records will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
